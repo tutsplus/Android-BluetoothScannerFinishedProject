@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="85dp"
+    android:weightSum="1"        android:background="@drawable/corners"
+    >
+
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/titleTextView"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_weight="0.04"
+        android:paddingTop="3dp"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:singleLine="true" />
+
+    <View
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:id="@+id/line"
+        android:background="#fff"
+        android:layout_below="@+id/titleTextView"
+        />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:text="MAC Address"
+        android:id="@+id/macAddress"
+        android:layout_below="@+id/titleTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/titleTextView"
+        android:layout_alignEnd="@+id/titleTextView"
+        android:textOff="@string/button_disconnect"
+        android:textOn="@string/button_connect"
+        android:textColor="#fff" />
+</RelativeLayout>
